@@ -81,8 +81,5 @@ int main(int argc, char** argv) {
   // If you would rather not write to a file, the contents can be discarded.
   // this still closes the resource, but does not write to file.
   zf.discard();
-
-  // remember to free
-  free(textData);
   return 0;
 }

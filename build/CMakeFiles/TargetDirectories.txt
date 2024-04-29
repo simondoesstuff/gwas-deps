@@ -1,3 +1,0 @@
-/Users/simon/Code/work/gwas-deps/build/CMakeFiles/main.dir
-/Users/simon/Code/work/gwas-deps/build/CMakeFiles/edit_cache.dir
-/Users/simon/Code/work/gwas-deps/build/CMakeFiles/rebuild_cache.dir
