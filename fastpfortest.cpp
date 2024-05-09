@@ -1,16 +1,26 @@
-#include "fastpfor.h"
-#include "variablebyte.h"
 #include "iostream"
 
-int main() {
-  std::cout << "hello world" << std::endl;
+#include <vector>
+#include <memory>
+#include <limits>
+#include <random>
+#include <cmath>
 
-  std::unique_ptr<FastPForLib::VariableByte> codec;
+/* #include "gtest/gtest.h" */
+
+#include "codecs.h"
+#include "variablebyte.h"
+
+int main() {
+  FastPForLib::VariableByte *codec = new FastPForLib::VariableByte();
   std::vector<uint32_t> in32;
   std::vector<uint32_t> encoded;
   std::vector<uint32_t> out32;
 
+  in32 = {0,1,2,3,4,5};
+
   size_t inSize = in32.size();
+  out32.resize(inSize);
   encoded.resize(in32.size() * 2);
   size_t encodeSize = encoded.size();
 
@@ -20,21 +30,13 @@ int main() {
     encoded.data(),
     encodeSize);
 
-  /* codec->encodeArray( */
-  /*   reinterpret_cast<uint32_t *>(in32.data()), */
-  /*   inSize, */
-  /*   encoded.data(), */
-  /*   encodeSize); */
+  codec->decodeArray(
+    encoded.data(),
+    encodeSize,
+    reinterpret_cast<uint32_t *>(out32.data()),
+    inSize);
 
-  /* codec->decodeArray( */
-  /*   encoded.data(), */
-  /*   encodeSize, */
-  /*   reinterpret_cast<uint32_t *>(out32.data()), */
-  /*   inSize); */
-
-  std::cout << out32.size();
-  std::cout << "hello world" << std::endl;
   for (size_t i = 0; i < out32.size(); i++) {
-    std::cout << i;
+    std::cout << out32[i] << " ";
   }
 }
