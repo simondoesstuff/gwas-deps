@@ -1,0 +1,1026 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      The system is: Darwin - 23.2.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/clang 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /Users/simon/Code/work/gwas-deps/build/CMakeFiles/3.27.8/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/clang++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /Users/simon/Code/work/gwas-deps/build/CMakeFiles/3.27.8/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-tk4ZxS"
+      binary: "/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-tk4ZxS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "11.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-tk4ZxS'
+        
+        Run Build Command(s): /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/bin/cmake -E env VERBOSE=1 /nix/store/zc9qsb0rzlw0ckhy7097frcwb4pkfx3d-gnumake-4.4.1/bin/make -f Makefile cmTC_b033f/fast
+        /nix/store/zc9qsb0rzlw0ckhy7097frcwb4pkfx3d-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_b033f.dir/build.make CMakeFiles/cmTC_b033f.dir/build
+        make[1]: Entering directory '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-tk4ZxS'
+        Building C object CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/clang   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=11.0   -v -Wl,-v -MD -MT CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o -c /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        clang version 16.0.6
+        Target: arm64-apple-darwin
+        Thread model: posix
+        InstalledDir: /nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/bin
+        clang-16: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         (in-process)
+         "/nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/bin/clang-16" -cc1 -triple arm64-apple-macosx11.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=14.4 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-a13 -target-feature +v8.3a -target-feature +crypto -target-feature +crc -target-feature +fullfp16 -target-feature +lse -target-feature +neon -target-feature +ras -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 609 -v -fcoverage-compilation-dir=/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-tk4ZxS -nostdsysteminc -resource-dir /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root -dependency-file CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -idirafter /nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/include -isystem /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include -isystem /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include -isystem /nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include -isystem /nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include -iframework /nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include -isystem /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include -isystem /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include -isystem /nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include -isystem /nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include -iframework /nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include -isystem /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include -isystem /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include -isystem /nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include -isystem /nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include -iframework /nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include -U _FORTIFY_SOURCE -U _FORTIFY_SOURCE -D _FORTIFY_SOURCE=2 -internal-isystem /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include -source-date-epoch 315532800 -O2 -Wformat -Wformat-security -Werror=format-security -fdebug-compilation-dir=/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-tk4ZxS -ferror-limit 19 -fwrapv -stack-protector 2 -stack-protector-buffer-size 4 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o -x c /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target aarch64-apple-darwin23.2.0
+        ignoring duplicate directory "/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include"
+        ignoring duplicate directory "/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include"
+        ignoring duplicate directory "/nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include"
+        ignoring duplicate directory "/nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include"
+        ignoring duplicate directory "/nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include"
+        ignoring duplicate directory "/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include"
+        ignoring duplicate directory "/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include"
+        ignoring duplicate directory "/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include"
+        ignoring duplicate directory "/nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include"
+        ignoring duplicate directory "/nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include"
+        ignoring duplicate directory "/nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include"
+        ignoring duplicate directory "/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include"
+        ignoring duplicate directory "/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks"
+        ignoring duplicate directory "/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include
+         /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include
+         /nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include
+         /nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include
+         /nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include
+         /nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include
+         /nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks (framework directory)
+         /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include
+         /nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/include
+        End of search list.
+        Linking C executable cmTC_b033f
+        /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b033f.dir/link.txt --verbose=1
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/clang  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=11.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o -o cmTC_b033f 
+        clang version 16.0.6
+        Target: arm64-apple-darwin
+        Thread model: posix
+        InstalledDir: /nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/bin
+         "/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/ld" -demangle -lto_library /nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 11.0.0 14.4 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -o cmTC_b033f -L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib -L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib -L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib -L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib -L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib -L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib -L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib -L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib -L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib -L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib -L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib -L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib -L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib -L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib -L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib -L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib -L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib -L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib -L/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib -L/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib -L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o -arch arm64 -lSystem /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a -F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks
+        @(#)PROGRAM:ld  PROJECT:ld64-609
+        BUILD 00:00:00 Jan  1 1980
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+        Library search paths:
+        	/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib
+        	/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib
+        	/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib
+        	/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib
+        	/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib
+        	/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib
+        	/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib
+        	/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib
+        	/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib
+        	/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib
+        	/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib
+        	/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib
+        	/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib
+        	/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib
+        	/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib
+        	/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib
+        	/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib
+        	/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib
+        	/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib
+        	/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib
+        	/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib
+        Framework search paths:
+        	/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks
+        	/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks
+        	/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks
+        make[1]: Leaving directory '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-tk4ZxS'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include]
+          add: [/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include]
+          add: [/nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include]
+          add: [/nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include]
+          add: [/nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include]
+          add: [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include]
+          add: [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include]
+          add: [/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/include]
+        end of search list found
+        collapse include dir [/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include] ==> [/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include]
+        collapse include dir [/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include] ==> [/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include]
+        collapse include dir [/nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include] ==> [/nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include]
+        collapse include dir [/nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include] ==> [/nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include]
+        collapse include dir [/nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include] ==> [/nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include]
+        collapse include dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include] ==> [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include]
+        collapse include dir [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include] ==> [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include]
+        collapse include dir [/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/include] ==> [/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/include]
+        implicit include dirs: [/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include;/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include;/nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include;/nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include;/nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include;/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include;/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include;/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-tk4ZxS']
+        ignore line: []
+        ignore line: [Run Build Command(s): /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/bin/cmake -E env VERBOSE=1 /nix/store/zc9qsb0rzlw0ckhy7097frcwb4pkfx3d-gnumake-4.4.1/bin/make -f Makefile cmTC_b033f/fast]
+        ignore line: [/nix/store/zc9qsb0rzlw0ckhy7097frcwb4pkfx3d-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_b033f.dir/build.make CMakeFiles/cmTC_b033f.dir/build]
+        ignore line: [make[1]: Entering directory '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-tk4ZxS']
+        ignore line: [Building C object CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/clang   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=11.0   -v -Wl -v -MD -MT CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o -c /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang version 16.0.6]
+        ignore line: [Target: arm64-apple-darwin]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/bin]
+        ignore line: [clang-16: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ (in-process)]
+        ignore line: [ "/nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/bin/clang-16" -cc1 -triple arm64-apple-macosx11.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=14.4 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-a13 -target-feature +v8.3a -target-feature +crypto -target-feature +crc -target-feature +fullfp16 -target-feature +lse -target-feature +neon -target-feature +ras -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 609 -v -fcoverage-compilation-dir=/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-tk4ZxS -nostdsysteminc -resource-dir /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root -dependency-file CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -idirafter /nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/include -isystem /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include -isystem /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include -isystem /nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include -isystem /nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include -iframework /nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include -isystem /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include -isystem /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include -isystem /nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include -isystem /nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include -iframework /nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include -isystem /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include -isystem /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include -isystem /nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include -isystem /nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include -iframework /nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include -U _FORTIFY_SOURCE -U _FORTIFY_SOURCE -D _FORTIFY_SOURCE=2 -internal-isystem /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include -source-date-epoch 315532800 -O2 -Wformat -Wformat-security -Werror=format-security -fdebug-compilation-dir=/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-tk4ZxS -ferror-limit 19 -fwrapv -stack-protector 2 -stack-protector-buffer-size 4 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o -x c /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target aarch64-apple-darwin23.2.0]
+        ignore line: [ignoring duplicate directory "/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks"]
+        ignore line: [ignoring duplicate directory "/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include]
+        ignore line: [ /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include]
+        ignore line: [ /nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include]
+        ignore line: [ /nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include]
+        ignore line: [ /nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include]
+        ignore line: [ /nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include]
+        ignore line: [ /nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks (framework directory)]
+        ignore line: [ /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include]
+        ignore line: [ /nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_b033f]
+        ignore line: [/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b033f.dir/link.txt --verbose=1]
+        ignore line: [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/clang  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=11.0 -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o -o cmTC_b033f ]
+        ignore line: [clang version 16.0.6]
+        ignore line: [Target: arm64-apple-darwin]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/bin]
+        link line: [ "/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/ld" -demangle -lto_library /nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 11.0.0 14.4 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -o cmTC_b033f -L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib -L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib -L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib -L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib -L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib -L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib -L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib -L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib -L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib -L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib -L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib -L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib -L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib -L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib -L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib -L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib -L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib -L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib -L/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib -L/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib -L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o -arch arm64 -lSystem /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a -F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+          arg [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [11.0.0] ==> ignore
+          arg [14.4] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b033f] ==> ignore
+          arg [-L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+          arg [-L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+          arg [-L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+          arg [-L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+          arg [-L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+          arg [-L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+          arg [-L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+          arg [-L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+          arg [-L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+          arg [-L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+          arg [-L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+          arg [-L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+          arg [-L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+          arg [-L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+          arg [-L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+          arg [-L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+          arg [-L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+          arg [-L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+          arg [-L/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib] ==> dir [/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib]
+          arg [-L/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib] ==> dir [/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib]
+          arg [-L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_b033f.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-lSystem] ==> lib [System]
+          arg [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a] ==> lib [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a]
+          arg [-F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> ignore
+          arg [-F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> ignore
+          arg [-F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> ignore
+        Library search paths: [;/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib;/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib;/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib;/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib;/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib;/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib;/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib;/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib;/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib;/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib;/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib;/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib;/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib;/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib;/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib;/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib;/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib;/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib;/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib;/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib;/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        Framework search paths: [;/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks;/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks;/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+        remove lib [System]
+        remove lib [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+        collapse library dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+        collapse library dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+        collapse library dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+        collapse library dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+        collapse library dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+        collapse library dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+        collapse library dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+        collapse library dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+        collapse library dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib] ==> [/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib]
+        collapse library dir [/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib] ==> [/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib]
+        collapse library dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+        collapse library dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+        collapse library dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+        collapse library dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+        collapse library dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+        collapse library dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+        collapse library dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+        collapse library dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+        collapse library dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+        collapse library dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib] ==> [/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib]
+        collapse library dir [/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib] ==> [/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib]
+        collapse library dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        collapse framework dir [/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> [/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+        collapse framework dir [/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> [/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+        collapse framework dir [/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> [/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib;/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib;/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib;/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib;/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib;/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib;/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib;/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib]
+        implicit fwks: [/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-69eXTO"
+      binary: "/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-69eXTO"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "11.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-69eXTO'
+        
+        Run Build Command(s): /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/bin/cmake -E env VERBOSE=1 /nix/store/zc9qsb0rzlw0ckhy7097frcwb4pkfx3d-gnumake-4.4.1/bin/make -f Makefile cmTC_a231f/fast
+        /nix/store/zc9qsb0rzlw0ckhy7097frcwb4pkfx3d-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_a231f.dir/build.make CMakeFiles/cmTC_a231f.dir/build
+        make[1]: Entering directory '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-69eXTO'
+        Building CXX object CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/clang++   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=11.0   -v -Wl,-v -MD -MT CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o -c /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        clang version 16.0.6
+        Target: arm64-apple-darwin
+        Thread model: posix
+        InstalledDir: /nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/bin
+        clang-16: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         (in-process)
+         "/nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/bin/clang-16" -cc1 -triple arm64-apple-macosx11.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=14.4 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-a13 -target-feature +v8.3a -target-feature +crypto -target-feature +crc -target-feature +fullfp16 -target-feature +lse -target-feature +neon -target-feature +ras -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 609 -v -fcoverage-compilation-dir=/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-69eXTO -nostdsysteminc -resource-dir /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root -dependency-file CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -idirafter /nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/include -isystem /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include -isystem /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include -isystem /nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include -isystem /nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include -iframework /nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include -isystem /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include -isystem /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include -isystem /nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include -isystem /nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include -iframework /nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include -isystem /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include -isystem /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include -isystem /nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include -isystem /nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include -iframework /nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include -isystem /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include/c++/v1 -isystem /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include/c++/v1 -U _FORTIFY_SOURCE -U _FORTIFY_SOURCE -D _FORTIFY_SOURCE=2 -internal-isystem /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include -source-date-epoch 315532800 -O2 -Wformat -Wformat-security -Werror=format-security -fdeprecated-macro -fdebug-compilation-dir=/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-69eXTO -ferror-limit 19 -fwrapv -stack-protector 2 -stack-protector-buffer-size 4 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target aarch64-apple-darwin23.2.0
+        ignoring duplicate directory "/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include"
+        ignoring duplicate directory "/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include"
+        ignoring duplicate directory "/nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include"
+        ignoring duplicate directory "/nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include"
+        ignoring duplicate directory "/nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include"
+        ignoring duplicate directory "/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include"
+        ignoring duplicate directory "/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include"
+        ignoring duplicate directory "/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include"
+        ignoring duplicate directory "/nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include"
+        ignoring duplicate directory "/nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include"
+        ignoring duplicate directory "/nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include"
+        ignoring duplicate directory "/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include"
+        ignoring duplicate directory "/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks"
+        ignoring duplicate directory "/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include
+         /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include
+         /nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include
+         /nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include
+         /nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include
+         /nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include
+         /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include/c++/v1
+         /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include/c++/v1
+         /nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks (framework directory)
+         /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include
+         /nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/include
+        End of search list.
+        Linking CXX executable cmTC_a231f
+        /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a231f.dir/link.txt --verbose=1
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/clang++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=11.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a231f 
+        clang version 16.0.6
+        Target: arm64-apple-darwin
+        Thread model: posix
+        InstalledDir: /nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/bin
+         "/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/ld" -demangle -lto_library /nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 11.0.0 14.4 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -o cmTC_a231f -L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib -L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib -L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib -L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib -L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib -L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib -L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib -L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib -L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib -L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib -L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib -L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib -L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib -L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib -L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib -L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib -L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib -L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib -L/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib -L/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib -L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o -lc++abi -arch arm64 -lc++ -lSystem /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a -F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks
+        @(#)PROGRAM:ld  PROJECT:ld64-609
+        BUILD 00:00:00 Jan  1 1980
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+        Library search paths:
+        	/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib
+        	/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib
+        	/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib
+        	/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib
+        	/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib
+        	/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib
+        	/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib
+        	/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib
+        	/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib
+        	/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib
+        	/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib
+        	/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib
+        	/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib
+        	/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib
+        	/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib
+        	/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib
+        	/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib
+        	/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib
+        	/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib
+        	/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib
+        	/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib
+        Framework search paths:
+        	/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks
+        	/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks
+        	/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks
+        make[1]: Leaving directory '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-69eXTO'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include]
+          add: [/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include]
+          add: [/nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include]
+          add: [/nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include]
+          add: [/nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include]
+          add: [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include]
+          add: [/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include/c++/v1]
+          add: [/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include/c++/v1]
+          add: [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include]
+          add: [/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/include]
+        end of search list found
+        collapse include dir [/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include] ==> [/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include]
+        collapse include dir [/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include] ==> [/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include]
+        collapse include dir [/nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include] ==> [/nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include]
+        collapse include dir [/nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include] ==> [/nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include]
+        collapse include dir [/nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include] ==> [/nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include]
+        collapse include dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include] ==> [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include]
+        collapse include dir [/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include/c++/v1] ==> [/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include/c++/v1]
+        collapse include dir [/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include/c++/v1] ==> [/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include/c++/v1]
+        collapse include dir [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include] ==> [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include]
+        collapse include dir [/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/include] ==> [/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/include]
+        implicit include dirs: [/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include;/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include;/nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include;/nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include;/nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include;/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include;/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include/c++/v1;/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include/c++/v1;/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include;/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-69eXTO']
+        ignore line: []
+        ignore line: [Run Build Command(s): /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/bin/cmake -E env VERBOSE=1 /nix/store/zc9qsb0rzlw0ckhy7097frcwb4pkfx3d-gnumake-4.4.1/bin/make -f Makefile cmTC_a231f/fast]
+        ignore line: [/nix/store/zc9qsb0rzlw0ckhy7097frcwb4pkfx3d-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_a231f.dir/build.make CMakeFiles/cmTC_a231f.dir/build]
+        ignore line: [make[1]: Entering directory '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-69eXTO']
+        ignore line: [Building CXX object CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/clang++   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=11.0   -v -Wl -v -MD -MT CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o -c /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang version 16.0.6]
+        ignore line: [Target: arm64-apple-darwin]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/bin]
+        ignore line: [clang-16: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ (in-process)]
+        ignore line: [ "/nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/bin/clang-16" -cc1 -triple arm64-apple-macosx11.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=14.4 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-a13 -target-feature +v8.3a -target-feature +crypto -target-feature +crc -target-feature +fullfp16 -target-feature +lse -target-feature +neon -target-feature +ras -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 609 -v -fcoverage-compilation-dir=/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-69eXTO -nostdsysteminc -resource-dir /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root -dependency-file CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -idirafter /nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/include -isystem /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include -isystem /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include -isystem /nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include -isystem /nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include -iframework /nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include -isystem /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include -isystem /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include -isystem /nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include -isystem /nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include -iframework /nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include -isystem /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include -isystem /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include -isystem /nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include -isystem /nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include -iframework /nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include -isystem /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include/c++/v1 -isystem /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include/c++/v1 -U _FORTIFY_SOURCE -U _FORTIFY_SOURCE -D _FORTIFY_SOURCE=2 -internal-isystem /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include -source-date-epoch 315532800 -O2 -Wformat -Wformat-security -Werror=format-security -fdeprecated-macro -fdebug-compilation-dir=/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-69eXTO -ferror-limit 19 -fwrapv -stack-protector 2 -stack-protector-buffer-size 4 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target aarch64-apple-darwin23.2.0]
+        ignore line: [ignoring duplicate directory "/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks"]
+        ignore line: [ignoring duplicate directory "/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include]
+        ignore line: [ /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include]
+        ignore line: [ /nix/store/bj94cxxlv3h57w85nvagymxg8n7fsy9i-compiler-rt-libc-16.0.6-dev/include]
+        ignore line: [ /nix/store/d4bjk2zh5i2ddmh7qci5xxlxrq3317mi-zlib-1.3-dev/include]
+        ignore line: [ /nix/store/06g062cz5nyzj357ss7jxlsarmflmkaz-libzip-1.10.1-dev/include]
+        ignore line: [ /nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/include]
+        ignore line: [ /nix/store/vx66p3752j69kl70z22rpwqbfg98labg-libcxx-16.0.6-dev/include/c++/v1]
+        ignore line: [ /nix/store/a2knp1813k9mw8pir0y2jsavwdc8i6b7-libcxxabi-16.0.6-dev/include/c++/v1]
+        ignore line: [ /nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks (framework directory)]
+        ignore line: [ /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include]
+        ignore line: [ /nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_a231f]
+        ignore line: [/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a231f.dir/link.txt --verbose=1]
+        ignore line: [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/clang++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=11.0 -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a231f ]
+        ignore line: [clang version 16.0.6]
+        ignore line: [Target: arm64-apple-darwin]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/bin]
+        link line: [ "/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/ld" -demangle -lto_library /nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 11.0.0 14.4 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -o cmTC_a231f -L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib -L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib -L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib -L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib -L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib -L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib -L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib -L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib -L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib -L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib -L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib -L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib -L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib -L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib -L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib -L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib -L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib -L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib -L/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib -L/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib -L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o -lc++abi -arch arm64 -lc++ -lSystem /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a -F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+          arg [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/nix/store/3vzbr8yb4c233lhi1qz78b8kaaxrjqcj-clang-16.0.6/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [11.0.0] ==> ignore
+          arg [14.4] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_a231f] ==> ignore
+          arg [-L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+          arg [-L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+          arg [-L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+          arg [-L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+          arg [-L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+          arg [-L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+          arg [-L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+          arg [-L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+          arg [-L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+          arg [-L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+          arg [-L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+          arg [-L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+          arg [-L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+          arg [-L/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+          arg [-L/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+          arg [-L/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+          arg [-L/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+          arg [-L/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+          arg [-L/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib] ==> dir [/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib]
+          arg [-L/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib] ==> dir [/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib]
+          arg [-L/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_a231f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++abi] ==> lib [c++abi]
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a] ==> lib [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a]
+          arg [-F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> ignore
+          arg [-F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> ignore
+          arg [-F/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> ignore
+        Library search paths: [;/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib;/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib;/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib;/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib;/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib;/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib;/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib;/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib;/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib;/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib;/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib;/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib;/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib;/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib;/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib;/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib;/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib;/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib;/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib;/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib;/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        Framework search paths: [;/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks;/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks;/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+        remove lib [System]
+        remove lib [/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+        collapse library dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+        collapse library dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+        collapse library dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+        collapse library dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+        collapse library dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+        collapse library dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+        collapse library dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+        collapse library dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+        collapse library dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib] ==> [/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib]
+        collapse library dir [/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib] ==> [/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib]
+        collapse library dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+        collapse library dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+        collapse library dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+        collapse library dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+        collapse library dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+        collapse library dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+        collapse library dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib] ==> [/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib]
+        collapse library dir [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib] ==> [/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib]
+        collapse library dir [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib] ==> [/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib]
+        collapse library dir [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib] ==> [/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib] ==> [/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib]
+        collapse library dir [/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib] ==> [/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib]
+        collapse library dir [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib] ==> [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib]
+        collapse framework dir [/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> [/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+        collapse framework dir [/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> [/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+        collapse framework dir [/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> [/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+        implicit libs: [c++abi;c++]
+        implicit objs: []
+        implicit dirs: [/nix/store/p5wr7bxrs2naa4rwy9sqs19rljr7g7qh-libcxx-16.0.6/lib;/nix/store/0w070w3a2azyy1gs4mgskz9j3pq0g5dy-libcxxabi-16.0.6/lib;/nix/store/bkisxa66nfr133rp78lf3nyg48r72z8d-compiler-rt-libc-16.0.6/lib;/nix/store/z4by244ay1bc3axm8m4816jywfhf2v5w-zlib-1.3/lib;/nix/store/s511dc2k2vdnaaj22b4wr31m16x32ls0-libzip-1.10.1/lib;/nix/store/jamghc149d8bmzapam08ix18ch35199w-libobjc-11.0.0/lib;/nix/store/kjcaylsca1fg47cgz94079xpgdfzi8s0-libSystem-11.0.0/lib;/nix/store/i7xsxvg0sgzs97aprlwlkciyfngg7xm2-clang-16.0.6-lib/lib]
+        implicit fwks: [/nix/store/k16r6kq869aaqxihlw8899ly0rbsaws0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+      
+      
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "FastPFor/cmake_modules/DetectCPUFeatures.cmake:45 (check_cxx_source_compiles)"
+      - "FastPFor/CMakeLists.txt:25 (include)"
+    checks:
+      - "Performing Test SUPPORT_SSE42"
+    directories:
+      source: "/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-qOzVkK"
+      binary: "/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-qOzVkK"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/simon/Code/work/gwas-deps/FastPFor/cmake_modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "11.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "SUPPORT_SSE42"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-qOzVkK'
+        
+        Run Build Command(s): /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/bin/cmake -E env VERBOSE=1 /nix/store/zc9qsb0rzlw0ckhy7097frcwb4pkfx3d-gnumake-4.4.1/bin/make -f Makefile cmTC_3dab5/fast
+        /nix/store/zc9qsb0rzlw0ckhy7097frcwb4pkfx3d-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_3dab5.dir/build.make CMakeFiles/cmTC_3dab5.dir/build
+        make[1]: Entering directory '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-qOzVkK'
+        Building CXX object CMakeFiles/cmTC_3dab5.dir/src.cxx.o
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/clang++ -DSUPPORT_SSE42  -march=native -msse4.2 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=11.0 -MD -MT CMakeFiles/cmTC_3dab5.dir/src.cxx.o -MF CMakeFiles/cmTC_3dab5.dir/src.cxx.o.d -o CMakeFiles/cmTC_3dab5.dir/src.cxx.o -c /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-qOzVkK/src.cxx
+        clang-16: warning: argument unused during compilation: '-msse4.2' [-Wunused-command-line-argument]
+        In file included from /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-qOzVkK/src.cxx:3:
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/smmintrin.h:14:2: error: "This header is only meant to be used on x86 and x64 architecture"
+        #error "This header is only meant to be used on x86 and x64 architecture"
+         ^
+        In file included from /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-qOzVkK/src.cxx:3:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/smmintrin.h:17:
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/tmmintrin.h:14:2: error: "This header is only meant to be used on x86 and x64 architecture"
+        #error "This header is only meant to be used on x86 and x64 architecture"
+         ^
+        In file included from /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-qOzVkK/src.cxx:3:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/smmintrin.h:17:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/tmmintrin.h:17:
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/pmmintrin.h:14:2: error: "This header is only meant to be used on x86 and x64 architecture"
+        #error "This header is only meant to be used on x86 and x64 architecture"
+         ^
+        In file included from /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-qOzVkK/src.cxx:3:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/smmintrin.h:17:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/tmmintrin.h:17:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/pmmintrin.h:17:
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/emmintrin.h:14:2: error: "This header is only meant to be used on x86 and x64 architecture"
+        #error "This header is only meant to be used on x86 and x64 architecture"
+         ^
+        In file included from /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-qOzVkK/src.cxx:3:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/smmintrin.h:17:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/tmmintrin.h:17:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/pmmintrin.h:17:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/emmintrin.h:17:
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/xmmintrin.h:14:2: error: "This header is only meant to be used on x86 and x64 architecture"
+        #error "This header is only meant to be used on x86 and x64 architecture"
+         ^
+        In file included from /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-qOzVkK/src.cxx:3:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/smmintrin.h:17:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/tmmintrin.h:17:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/pmmintrin.h:17:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/emmintrin.h:17:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/xmmintrin.h:17:
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:14:2: error: "This header is only meant to be used on x86 and x64 architecture"
+        #error "This header is only meant to be used on x86 and x64 architecture"
+         ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:37:5: error: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
+            __builtin_ia32_emms();
+            ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:37:5: note: '__builtin_isless' declared here
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:37:25: error: too few arguments to function call, expected 2, have 0
+            __builtin_ia32_emms();
+            ~~~~~~~~~~~~~~~~~~~~^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:54:19: error: use of undeclared identifier '__builtin_ia32_vec_init_v2si'
+            return (__m64)__builtin_ia32_vec_init_v2si(__i, 0);
+                          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:71:12: error: use of undeclared identifier '__builtin_ia32_vec_ext_v2si'
+            return __builtin_ia32_vec_ext_v2si((__v2si)__m, 0);
+                   ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:133:19: error: use of undeclared identifier '__builtin_ia32_packsswb'
+            return (__m64)__builtin_ia32_packsswb((__v4hi)__m1, (__v4hi)__m2);
+                          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:163:19: error: use of undeclared identifier '__builtin_ia32_packssdw'
+            return (__m64)__builtin_ia32_packssdw((__v2si)__m1, (__v2si)__m2);
+                          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:193:19: error: use of undeclared identifier '__builtin_ia32_packuswb'
+            return (__m64)__builtin_ia32_packuswb((__v4hi)__m1, (__v4hi)__m2);
+                          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:220:19: error: use of undeclared identifier '__builtin_ia32_punpckhbw'
+            return (__m64)__builtin_ia32_punpckhbw((__v8qi)__m1, (__v8qi)__m2);
+                          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:243:19: error: use of undeclared identifier '__builtin_ia32_punpckhwd'
+            return (__m64)__builtin_ia32_punpckhwd((__v4hi)__m1, (__v4hi)__m2);
+                          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:264:19: error: use of undeclared identifier '__builtin_ia32_punpckhdq'
+            return (__m64)__builtin_ia32_punpckhdq((__v2si)__m1, (__v2si)__m2);
+                          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:291:19: error: use of undeclared identifier '__builtin_ia32_punpcklbw'
+            return (__m64)__builtin_ia32_punpcklbw((__v8qi)__m1, (__v8qi)__m2);
+                          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:314:19: error: use of undeclared identifier '__builtin_ia32_punpcklwd'
+            return (__m64)__builtin_ia32_punpcklwd((__v4hi)__m1, (__v4hi)__m2);
+                          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:335:19: error: use of undeclared identifier '__builtin_ia32_punpckldq'
+            return (__m64)__builtin_ia32_punpckldq((__v2si)__m1, (__v2si)__m2);
+                          ^
+        fatal error: too many errors emitted, stopping now [-ferror-limit=]
+        20 errors generated.
+        make[1]: *** [CMakeFiles/cmTC_3dab5.dir/build.make:79: CMakeFiles/cmTC_3dab5.dir/src.cxx.o] Error 1
+        make[1]: Leaving directory '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-qOzVkK'
+        make: *** [Makefile:127: cmTC_3dab5/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "FastPFor/cmake_modules/DetectCPUFeatures.cmake:47 (check_cxx_source_compiles)"
+      - "FastPFor/CMakeLists.txt:25 (include)"
+    checks:
+      - "Performing Test SUPPORT_AVX"
+    directories:
+      source: "/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-uDB2Id"
+      binary: "/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-uDB2Id"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/simon/Code/work/gwas-deps/FastPFor/cmake_modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "11.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "SUPPORT_AVX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-uDB2Id'
+        
+        Run Build Command(s): /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/bin/cmake -E env VERBOSE=1 /nix/store/zc9qsb0rzlw0ckhy7097frcwb4pkfx3d-gnumake-4.4.1/bin/make -f Makefile cmTC_28d8a/fast
+        /nix/store/zc9qsb0rzlw0ckhy7097frcwb4pkfx3d-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_28d8a.dir/build.make CMakeFiles/cmTC_28d8a.dir/build
+        make[1]: Entering directory '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-uDB2Id'
+        Building CXX object CMakeFiles/cmTC_28d8a.dir/src.cxx.o
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/clang++ -DSUPPORT_AVX  -march=native -mavx -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=11.0 -MD -MT CMakeFiles/cmTC_28d8a.dir/src.cxx.o -MF CMakeFiles/cmTC_28d8a.dir/src.cxx.o.d -o CMakeFiles/cmTC_28d8a.dir/src.cxx.o -c /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-uDB2Id/src.cxx
+        clang-16: warning: argument unused during compilation: '-mavx' [-Wunused-command-line-argument]
+        In file included from /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-uDB2Id/src.cxx:3:
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/immintrin.h:14:2: error: "This header is only meant to be used on x86 and x64 architecture"
+        #error "This header is only meant to be used on x86 and x64 architecture"
+         ^
+        In file included from /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-uDB2Id/src.cxx:3:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/immintrin.h:17:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/x86gprintrin.h:15:
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/hresetintrin.h:42:27: error: invalid input constraint 'a' in asm
+          __asm__ ("hreset $0" :: "a"(__eax));
+                                  ^
+        In file included from /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-uDB2Id/src.cxx:3:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/immintrin.h:17:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/x86gprintrin.h:25:
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/crc32intrin.h:33:10: error: use of undeclared identifier '__builtin_ia32_crc32qi'
+          return __builtin_ia32_crc32qi(__C, __D);
+                 ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/crc32intrin.h:53:10: error: use of undeclared identifier '__builtin_ia32_crc32hi'; did you mean '__builtin_arm_crc32h'?
+          return __builtin_ia32_crc32hi(__C, __D);
+                 ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/crc32intrin.h:53:10: note: '__builtin_arm_crc32h' declared here
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/crc32intrin.h:73:10: error: use of undeclared identifier '__builtin_ia32_crc32si'
+          return __builtin_ia32_crc32si(__C, __D);
+                 ^
+        In file included from /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-uDB2Id/src.cxx:3:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/immintrin.h:17:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/x86gprintrin.h:35:
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/raointintrin.h:39:3: error: use of undeclared identifier '__builtin_ia32_aadd32'; did you mean '__builtin_arm_addg'?
+          __builtin_ia32_aadd32((int *)__A, __B);
+          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/raointintrin.h:39:3: note: '__builtin_arm_addg' declared here
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/raointintrin.h:39:3: error: argument to '__builtin_arm_addg' must be a constant integer
+          __builtin_ia32_aadd32((int *)__A, __B);
+          ^                                 ~~~
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/raointintrin.h:61:3: error: use of undeclared identifier '__builtin_ia32_aand32'
+          __builtin_ia32_aand32((int *)__A, __B);
+          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/raointintrin.h:83:3: error: use of undeclared identifier '__builtin_ia32_aor32'
+          __builtin_ia32_aor32((int *)__A, __B);
+          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/raointintrin.h:105:3: error: use of undeclared identifier '__builtin_ia32_axor32'
+          __builtin_ia32_axor32((int *)__A, __B);
+          ^
+        In file included from /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-uDB2Id/src.cxx:3:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/immintrin.h:21:
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:14:2: error: "This header is only meant to be used on x86 and x64 architecture"
+        #error "This header is only meant to be used on x86 and x64 architecture"
+         ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:37:5: error: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
+            __builtin_ia32_emms();
+            ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:37:5: note: '__builtin_isless' declared here
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:37:25: error: too few arguments to function call, expected 2, have 0
+            __builtin_ia32_emms();
+            ~~~~~~~~~~~~~~~~~~~~^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:54:19: error: use of undeclared identifier '__builtin_ia32_vec_init_v2si'
+            return (__m64)__builtin_ia32_vec_init_v2si(__i, 0);
+                          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:71:12: error: use of undeclared identifier '__builtin_ia32_vec_ext_v2si'
+            return __builtin_ia32_vec_ext_v2si((__v2si)__m, 0);
+                   ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:133:19: error: use of undeclared identifier '__builtin_ia32_packsswb'
+            return (__m64)__builtin_ia32_packsswb((__v4hi)__m1, (__v4hi)__m2);
+                          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:163:19: error: use of undeclared identifier '__builtin_ia32_packssdw'
+            return (__m64)__builtin_ia32_packssdw((__v2si)__m1, (__v2si)__m2);
+                          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:193:19: error: use of undeclared identifier '__builtin_ia32_packuswb'
+            return (__m64)__builtin_ia32_packuswb((__v4hi)__m1, (__v4hi)__m2);
+                          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:220:19: error: use of undeclared identifier '__builtin_ia32_punpckhbw'
+            return (__m64)__builtin_ia32_punpckhbw((__v8qi)__m1, (__v8qi)__m2);
+                          ^
+        fatal error: too many errors emitted, stopping now [-ferror-limit=]
+        20 errors generated.
+        make[1]: *** [CMakeFiles/cmTC_28d8a.dir/build.make:79: CMakeFiles/cmTC_28d8a.dir/src.cxx.o] Error 1
+        make[1]: Leaving directory '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-uDB2Id'
+        make: *** [Makefile:127: cmTC_28d8a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "FastPFor/cmake_modules/DetectCPUFeatures.cmake:49 (check_cxx_source_compiles)"
+      - "FastPFor/CMakeLists.txt:25 (include)"
+    checks:
+      - "Performing Test SUPPORT_AVX2"
+    directories:
+      source: "/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-3Pr3Sv"
+      binary: "/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-3Pr3Sv"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/simon/Code/work/gwas-deps/FastPFor/cmake_modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "11.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "SUPPORT_AVX2"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-3Pr3Sv'
+        
+        Run Build Command(s): /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/bin/cmake -E env VERBOSE=1 /nix/store/zc9qsb0rzlw0ckhy7097frcwb4pkfx3d-gnumake-4.4.1/bin/make -f Makefile cmTC_c519a/fast
+        /nix/store/zc9qsb0rzlw0ckhy7097frcwb4pkfx3d-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_c519a.dir/build.make CMakeFiles/cmTC_c519a.dir/build
+        make[1]: Entering directory '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-3Pr3Sv'
+        Building CXX object CMakeFiles/cmTC_c519a.dir/src.cxx.o
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/clang++ -DSUPPORT_AVX2  -march=native -mavx2 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=11.0 -MD -MT CMakeFiles/cmTC_c519a.dir/src.cxx.o -MF CMakeFiles/cmTC_c519a.dir/src.cxx.o.d -o CMakeFiles/cmTC_c519a.dir/src.cxx.o -c /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-3Pr3Sv/src.cxx
+        clang-16: warning: argument unused during compilation: '-mavx2' [-Wunused-command-line-argument]
+        In file included from /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-3Pr3Sv/src.cxx:3:
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/immintrin.h:14:2: error: "This header is only meant to be used on x86 and x64 architecture"
+        #error "This header is only meant to be used on x86 and x64 architecture"
+         ^
+        In file included from /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-3Pr3Sv/src.cxx:3:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/immintrin.h:17:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/x86gprintrin.h:15:
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/hresetintrin.h:42:27: error: invalid input constraint 'a' in asm
+          __asm__ ("hreset $0" :: "a"(__eax));
+                                  ^
+        In file included from /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-3Pr3Sv/src.cxx:3:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/immintrin.h:17:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/x86gprintrin.h:25:
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/crc32intrin.h:33:10: error: use of undeclared identifier '__builtin_ia32_crc32qi'
+          return __builtin_ia32_crc32qi(__C, __D);
+                 ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/crc32intrin.h:53:10: error: use of undeclared identifier '__builtin_ia32_crc32hi'; did you mean '__builtin_arm_crc32h'?
+          return __builtin_ia32_crc32hi(__C, __D);
+                 ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/crc32intrin.h:53:10: note: '__builtin_arm_crc32h' declared here
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/crc32intrin.h:73:10: error: use of undeclared identifier '__builtin_ia32_crc32si'
+          return __builtin_ia32_crc32si(__C, __D);
+                 ^
+        In file included from /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-3Pr3Sv/src.cxx:3:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/immintrin.h:17:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/x86gprintrin.h:35:
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/raointintrin.h:39:3: error: use of undeclared identifier '__builtin_ia32_aadd32'; did you mean '__builtin_arm_addg'?
+          __builtin_ia32_aadd32((int *)__A, __B);
+          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/raointintrin.h:39:3: note: '__builtin_arm_addg' declared here
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/raointintrin.h:39:3: error: argument to '__builtin_arm_addg' must be a constant integer
+          __builtin_ia32_aadd32((int *)__A, __B);
+          ^                                 ~~~
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/raointintrin.h:61:3: error: use of undeclared identifier '__builtin_ia32_aand32'
+          __builtin_ia32_aand32((int *)__A, __B);
+          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/raointintrin.h:83:3: error: use of undeclared identifier '__builtin_ia32_aor32'
+          __builtin_ia32_aor32((int *)__A, __B);
+          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/raointintrin.h:105:3: error: use of undeclared identifier '__builtin_ia32_axor32'
+          __builtin_ia32_axor32((int *)__A, __B);
+          ^
+        In file included from /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-3Pr3Sv/src.cxx:3:
+        In file included from /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/immintrin.h:21:
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:14:2: error: "This header is only meant to be used on x86 and x64 architecture"
+        #error "This header is only meant to be used on x86 and x64 architecture"
+         ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:37:5: error: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
+            __builtin_ia32_emms();
+            ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:37:5: note: '__builtin_isless' declared here
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:37:25: error: too few arguments to function call, expected 2, have 0
+            __builtin_ia32_emms();
+            ~~~~~~~~~~~~~~~~~~~~^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:54:19: error: use of undeclared identifier '__builtin_ia32_vec_init_v2si'
+            return (__m64)__builtin_ia32_vec_init_v2si(__i, 0);
+                          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:71:12: error: use of undeclared identifier '__builtin_ia32_vec_ext_v2si'
+            return __builtin_ia32_vec_ext_v2si((__v2si)__m, 0);
+                   ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:133:19: error: use of undeclared identifier '__builtin_ia32_packsswb'
+            return (__m64)__builtin_ia32_packsswb((__v4hi)__m1, (__v4hi)__m2);
+                          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:163:19: error: use of undeclared identifier '__builtin_ia32_packssdw'
+            return (__m64)__builtin_ia32_packssdw((__v2si)__m1, (__v2si)__m2);
+                          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:193:19: error: use of undeclared identifier '__builtin_ia32_packuswb'
+            return (__m64)__builtin_ia32_packuswb((__v4hi)__m1, (__v4hi)__m2);
+                          ^
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/resource-root/include/mmintrin.h:220:19: error: use of undeclared identifier '__builtin_ia32_punpckhbw'
+            return (__m64)__builtin_ia32_punpckhbw((__v8qi)__m1, (__v8qi)__m2);
+                          ^
+        fatal error: too many errors emitted, stopping now [-ferror-limit=]
+        20 errors generated.
+        make[1]: *** [CMakeFiles/cmTC_c519a.dir/build.make:79: CMakeFiles/cmTC_c519a.dir/src.cxx.o] Error 1
+        make[1]: Leaving directory '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-3Pr3Sv'
+        make: *** [Makefile:127: cmTC_c519a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "build/FastPFor/googletest-src/googletest/cmake/internal_utils.cmake:66 (find_package)"
+      - "build/FastPFor/googletest-src/googletest/CMakeLists.txt:83 (config_compiler_and_linker)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-9KwIdH"
+      binary: "/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-9KwIdH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/simon/Code/work/gwas-deps/FastPFor/cmake_modules"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "11.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-9KwIdH'
+        
+        Run Build Command(s): /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/bin/cmake -E env VERBOSE=1 /nix/store/zc9qsb0rzlw0ckhy7097frcwb4pkfx3d-gnumake-4.4.1/bin/make -f Makefile cmTC_0c582/fast
+        /nix/store/zc9qsb0rzlw0ckhy7097frcwb4pkfx3d-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_0c582.dir/build.make CMakeFiles/cmTC_0c582.dir/build
+        make[1]: Entering directory '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-9KwIdH'
+        Building C object CMakeFiles/cmTC_0c582.dir/src.c.o
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/clang -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=11.0 -MD -MT CMakeFiles/cmTC_0c582.dir/src.c.o -MF CMakeFiles/cmTC_0c582.dir/src.c.o.d -o CMakeFiles/cmTC_0c582.dir/src.c.o -c /Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-9KwIdH/src.c
+        Linking C executable cmTC_0c582
+        /nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c582.dir/link.txt --verbose=1
+        /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/clang  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=11.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_0c582.dir/src.c.o -o cmTC_0c582 
+        make[1]: Leaving directory '/Users/simon/Code/work/gwas-deps/build/CMakeFiles/CMakeScratch/TryCompile-9KwIdH'
+        
+      exitCode: 0
+...

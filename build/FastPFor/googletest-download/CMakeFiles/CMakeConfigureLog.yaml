@@ -1,0 +1,11 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Darwin - 23.2.0 - arm64
+...

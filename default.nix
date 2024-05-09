@@ -7,5 +7,6 @@ stdenv.mkDerivation {
       libzip
       gcc
       cmake
+      simde
     ];
 }

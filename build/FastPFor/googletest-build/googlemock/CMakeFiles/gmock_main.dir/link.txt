@@ -1,0 +1,2 @@
+/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/ar qc ../../../lib/libgmock_main.a CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+/nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/ranlib ../../../lib/libgmock_main.a

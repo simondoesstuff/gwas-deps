@@ -1,0 +1,7 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The patch step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+command (connected)=/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/bin/cmake;-Dcan_fetch=YES;-P;/Users/simon/Code/work/gwas-deps/build/FastPFor/googletest-download/googletest-prefix/tmp/googletest-gitupdate.cmake
+command (disconnected)=/nix/store/9m0szzwibi1rwp3wvn36r7w478i753ll-cmake-3.27.8/bin/cmake;-Dcan_fetch=NO;-P;/Users/simon/Code/work/gwas-deps/build/FastPFor/googletest-download/googletest-prefix/tmp/googletest-gitupdate.cmake
+work_dir=/Users/simon/Code/work/gwas-deps/build/FastPFor/googletest-src
