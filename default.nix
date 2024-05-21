@@ -8,5 +8,6 @@ stdenv.mkDerivation {
       gcc
       cmake
       simde
+      bzip2
     ];
 }

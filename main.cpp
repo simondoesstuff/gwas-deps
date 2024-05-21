@@ -25,7 +25,8 @@ int main(int argc, char** argv) {
   
 #ifdef LIBZIPPP_USE_BZIP2
   // Default is DEFLATE.
-  zf.setCompressionMethod(entry, CompressionMethod::BZIP2);
+  zf.setCompressionMethod(CompressionMethod::BZIP2);
+  std::cout << "using bz2." << std::endl;
 #endif
 
   // ------------------------------------------------
